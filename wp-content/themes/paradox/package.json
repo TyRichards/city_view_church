@@ -1,0 +1,22 @@
+{
+  "name": "Hanna",
+  "version": "1.4",
+  "description": "A portfolio theme for creative professionals and agencies.",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
+  "author": "Themezilla",
+  "license": "GNU GPLv2",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-recess": "^1.1.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^1.1.0",
+    "gulp-watch": "^2.0.0"
+  }
+}
