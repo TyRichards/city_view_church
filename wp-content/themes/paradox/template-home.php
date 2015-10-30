@@ -20,8 +20,14 @@ get_header(); ?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class() ?>>
 		<?php zilla_page_start(); ?>
 
+			<!-- "Simple Responsive Slider" Slides from plugin -->
+			<div class="entry-thumbnail">
+				<?php if ( function_exists( 'show_simpleresponsiveslider' ) ) show_simpleresponsiveslider(); ?>
+			</div>
+
+			<!-- default feature image setup that comes with theme -->			
 			<?php
-				hanna_post_thumbnail($post->ID);
+				/* hanna_post_thumbnail($post->ID); */
 				hanna_the_content();
 			?>
 

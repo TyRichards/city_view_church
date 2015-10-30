@@ -2259,6 +2259,7 @@ label.error {
 h2 { font-family: "Quicksand", sans-serif; }
 .entry-title { text-align: center; }
 .contactform-container .entry-content { margin-top: 25px; }
+.contactform-container { padding-bottom: 0; }
 .subtitle {
     margin-top: 0.5em;
     color: #999;
@@ -2283,20 +2284,34 @@ h2 { font-family: "Quicksand", sans-serif; }
     outline: none!important;
     vertical-align: baseline!important;
 }
-.gform_body input:focus {
-    background: #eee;
-    border-color: 1px solid #000!important;
-}
-.ginput_container_checkbox .gfield_checkbox li input {
-    margin-top: 5px!important;
-}
-.gfield_checkbox li label {
-    font-weight: 500;
-}
-.gform_body .ginput_container_address input {
-    margin-bottom: 19px!important;
-}
+li#field_2_8, li#field_2_9 { margin-right: 0px; margin-bottom: 1px; }
+.gform_body input:focus { background: #eee; border-color: 1px solid #000!important; }
+.ginput_container_checkbox .gfield_checkbox li input { margin-top: 5px!important; }
+.gfield_checkbox li label { font-weight: 500; }
+.gform_body .ginput_container_address input { margin-bottom: 19px!important; }
 .ginput_container_select { margin-bottom: 20px!important; }
+.gform_wrapper .top_label li.gfield.gf_left_half input.large, .gform_wrapper .top_label li.gfield.gf_left_half input.medium, .gform_wrapper .top_label li.gfield.gf_left_half select.large, .gform_wrapper .top_label li.gfield.gf_left_half select.medium, .gform_wrapper .top_label li.gfield.gf_right_half input.large, .gform_wrapper .top_label li.gfield.gf_right_half input.medium, .gform_wrapper .top_label li.gfield.gf_right_half select.large, .gform_wrapper .top_label li.gfield.gf_right_half select.medium {
+    width: 98%!important;
+}
+
+/* Slider */
+.single .entry-thumbnail img, 
+.page .entry-thumbnail img, 
+.layout-standard .entry-thumbnail img {
+    position: relative;
+    top: 50%;
+/*    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);*/
+}
+.rslides_container { background-color: black; }
+.single .entry-thumbnail img, 
+.page .entry-thumbnail img, 
+.layout-standard .entry-thumbnail img {
+    width: 100%;
+}
+.entry-thumbnail .rslides { max-width: 1500px!important; width: 100%; margin: 0 auto; }
+.page-template-template-home .entry-thumbnail { margin-bottom: 0!important; }
 
 /* Desktop Only */
 @media (min-width: 992px) {    
